@@ -129,9 +129,9 @@ body {
             width: 160px;
             height: 130px;
 
-            img{
-                width:100%;
-                height:100%;
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
 
@@ -381,10 +381,11 @@ body {
     }
 
     .box_miniCards {
-        display:flex;
-        justify-content:space-around;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        width:98%;
+        width: 98%;
+
         .miniCards {
             display: flex;
             align-items: center;
@@ -415,7 +416,7 @@ body {
                     place-items: center;
                     width: 145px;
                     height: 40px;
-                    font-size:16px;
+                    font-size: 16px;
                     font-family: "Inter", serif;
                     font-optical-sizing: auto;
                     font-weight: 800;
@@ -446,24 +447,24 @@ body {
 
 
 //-------------section3
-.section-3{
+.section-3 {
 
-    
-    .options{
-        display:flex;
+
+    .options {
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
-        & > div:nth-child(1){
-            background:#f6f6f6;
-            border:1px solid #f6f6f6;
-            border-radius:999px;
-            color:#D99191;
-            width:371px;
-            height:86px;
-            display:grid;
+        &>div:nth-child(1) {
+            background: #f6f6f6;
+            border: 1px solid #f6f6f6;
+            border-radius: 999px;
+            color: #D99191;
+            width: 371px;
+            height: 86px;
+            display: grid;
             place-items: center;
-            font-size:28px;
+            font-size: 28px;
             font-family: "Inter", serif;
             font-optical-sizing: auto;
             font-weight: 800;
@@ -471,28 +472,111 @@ body {
         }
 
 
-        .options-category{
-            display:flex;
+        .options-category {
+            display: flex;
             justify-content: space-between;
 
-            div{
-                padding:10px 35px;
+            div {
+                padding: 10px 35px;
             }
 
-            div:nth-child(1){
-                border:1px solid black;
-                border-radius:999px;
+            div:nth-child(1) {
+                border: 1px solid black;
+                border-radius: 999px;
             }
         }
     }
 
 
-    h2{
-        margin:.8em 0 .3em 0;
-        font-size:40px;
+    h2 {
+        margin: .8em 0 .3em 0;
+        font-size: 40px;
         font-family: "Inter", serif;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
+    }
+
+
+    .box_productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap:4em;
+
+        .producto-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            height: 500px;
+
+
+
+            .imagen {
+                width: 100%;
+                height: 65%;
+                margin-bottom:1.5em;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .second {
+                width: 77%;
+                margin: 0 auto;
+
+                .name {
+                    font-size: 24px;
+                    font-family: "Inter", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 800;
+                    font-style: normal;
+                    margin-bottom: 1em;
+                }
+
+                .prices {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .oldPrice {
+                        text-decoration: line-through;
+                    }
+
+                    .newPrice {
+                        font-size: 45px;
+                        font-family: "Inter", serif;
+                        font-optical-sizing: auto;
+                        font-weight: 800;
+                        font-style: normal;
+                        flex: 1;
+                        margin-left: 15px;
+                    }
+
+
+                    .icon {
+                        width: 43px;
+                        height: 43px;
+                        display: block;
+                        padding: 10px;
+                        background: #f2f2f2;
+                        border-radius: 999px;
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
     }
 }
